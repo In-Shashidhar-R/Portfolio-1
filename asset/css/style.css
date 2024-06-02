@@ -8,7 +8,7 @@
 .navbar {
     height: 100vh;
     width: 100%;
-    background-image: url(bg.JPG);
+    background-image: url("/asset/Images/bg.jpg");
     background-position-x: right;
     background-size: cover;
     background-repeat: no-repeat;
