@@ -317,7 +317,7 @@ footer p:nth-child(2) {
 
 /* Responsive Design */
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
     nav {
         flex-direction: column;
         padding-top: 20px;
