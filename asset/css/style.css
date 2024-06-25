@@ -375,7 +375,7 @@ footer p:nth-child(2) {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
     nav ul li a {
         font-size: 16px;
     }
