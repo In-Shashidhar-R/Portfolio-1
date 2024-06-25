@@ -35,9 +35,12 @@ span {
     color: black;
 }
 
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
 nav ul li {
-    list-style-type: none;
-    display: inline-block;
     padding: 10px 25px;
 }
 
@@ -125,8 +128,7 @@ h4 {
     right: 1px;
 }
 
-
-/*About Section*/
+/* About Section */
 
 .about {
     width: 100%;
@@ -189,6 +191,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     min-height: 400px;
 }
 
@@ -310,4 +313,90 @@ footer p:nth-child(2) {
     color: red;
     bottom: 20px;
     font-size: 14px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    .page1 {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .newslatter form {
+        width: 100%;
+    }
+
+    .about img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .service .box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title h2 {
+        font-size: 50px;
+    }
+
+    footer p:nth-child(2) {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .newslatter form input:first-child {
+        padding: 14px;
+    }
+
+    .newslatter form input:last-child {
+        padding: 14px 20px;
+    }
+
+    .about-text h6 {
+        font-size: 40px;
+    }
+
+    .title h2 {
+        font-size: 40px;
+    }
 }
